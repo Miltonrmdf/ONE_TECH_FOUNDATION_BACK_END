@@ -57,6 +57,7 @@ Faça o casting da variável double para int e imprima o resultado.*/
         System.out.println(mensagemProduto);
 
         String ex5 = """
+                
                 5.Declare uma variável do tipo double valorEmDolares.
                 Atribua um valor em dólares a essa variável.
                 Considere que o valor de 1 dólar é equivalente a 4.94 reais.
@@ -64,6 +65,16 @@ Faça o casting da variável double para int e imprima o resultado.*/
                 e imprima o resultado formatado.
                 """;
         System.out.println(ex5);
+        double valorEmDolares= 253.37;
+        double valorEmReais=4.94;
+        double conversaoDolarEmReais=valorEmDolares*valorEmReais;
+
+        String conversao =String.format("""
+                Valor em dolares é $%.2f
+                Cotação do dolar em reais é R$%.2f
+                Valor em colares convertido em reais é R$%.2f""",
+                valorEmDolares,valorEmReais,conversaoDolarEmReais);
+        System.out.println(conversao);
 
         }
 }
