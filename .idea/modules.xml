@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" filepath="$PROJECT_DIR$/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerciciosAula2/ExerciciosAula2.iml" filepath="$PROJECT_DIR$/ExerciciosAula2/ExerciciosAula2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ONE_TECH_FOUNDATION_BACK_END.iml" filepath="$PROJECT_DIR$/.idea/ONE_TECH_FOUNDATION_BACK_END.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRIMEIRO_PROGRAMA_JAVA/Perfil/Perfil.iml" filepath="$PROJECT_DIR$/PRIMEIRO_PROGRAMA_JAVA/Perfil/Perfil.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRIMEIRO_PROGRAMA_JAVA/PrimeiraClasse/PrimeiraClasse.iml" filepath="$PROJECT_DIR$/PRIMEIRO_PROGRAMA_JAVA/PrimeiraClasse/PrimeiraClasse.iml" />
