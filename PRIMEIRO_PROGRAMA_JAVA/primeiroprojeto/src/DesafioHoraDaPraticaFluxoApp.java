@@ -2,13 +2,15 @@ import java.util.Scanner;
 
 public class DesafioHoraDaPraticaFluxoApp {
     public static void main(String[] args) {
+       //--------------Variáveis do ex1---------------
         int numeroPositivo = 1;
         int numeroNegativo = -1;
         int numeroZero = 0;
         Scanner leituraNumero = new Scanner(System.in);
         int numeroDigitado;
+        //--------------Final Variáveis ex1---------------
 
-
+        //--------------Textos ex1------------------------
         String ex1;
         ex1 = """
                 1.Crie um programa que solicite ao usuário digitar um número.
@@ -32,10 +34,14 @@ public class DesafioHoraDaPraticaFluxoApp {
         textoFavorDigiteNumero = """
                 Favor digite um numero;
                 """;
+    //--------------Final Textos ex1------------------------
 
+    //--------------Interação na tela ex1------------------------
         System.out.println(ex1);
         numeroDigitado= leituraNumero.nextInt();
+    //--------------Interação na tela ex1------------------------
 
+    //--------------Implementação ex1------------------------
         if (numeroDigitado>=numeroPositivo){
             numeroPositivo=numeroDigitado;
            System.out.println(textoNumeroPositivo);
@@ -52,7 +58,7 @@ public class DesafioHoraDaPraticaFluxoApp {
                     }
                 }
             }
-
+    //--------------Final da Implementação ex1------------------------
 
             }
         }
