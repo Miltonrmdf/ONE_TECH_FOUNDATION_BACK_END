@@ -27,7 +27,6 @@ public class Jogo_Adinvinhacao {
                 System.out.println("🔻 O número é menor.");
             }
         }
-
         if (!acertou) {
             System.out.println("❌ Suas tentativas acabaram! O número era: " + numeroSecreto);
         }
