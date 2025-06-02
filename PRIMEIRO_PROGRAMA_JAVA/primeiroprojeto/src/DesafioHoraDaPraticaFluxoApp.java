@@ -226,8 +226,24 @@ public class DesafioHoraDaPraticaFluxoApp {
   //-------------- Final ex5 -----------------------------
 
   //-------------- ex6 -----------------------------
+    System.out.println("Crie um programa que solicite ao usuário um número /n" +
+            " e calcule o fatorial desse número.");
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Digite um número inteiro para calcular o fatorial: ");
+        int numFat = scanner.nextInt();
 
+        long fatorial = 1;
+
+        if (numFat < 0) {
+            System.out.println("Não é possível calcular o fatorial de número negativo.");
+        } else {
+            for (int i = 1; i <= numFat; i++) {
+                fatorial *= i;
+            }
+            System.out.println("O fatorial de " + numFat + " é: " + fatorial);
+        }
+    //-------------- Final ex6 -----------------------------
     }
 }
 
