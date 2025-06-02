@@ -65,7 +65,7 @@ public class DesafioHoraDaPraticaFluxoApp {
         Scanner leituraNumInteiroDigitado = new Scanner(System.in);
     //--------------Final Variáveis ex2---------------------------
 
-    //--------------Variáveis ex2---------------------------
+    //--------------Variáveis texto ex2---------------------------
         String ex2,textoNumIguais,textoNumDiferentes,
                 textoNumPrimeiroMaior,textoNumPrimeiroMenor,textoDigPriNum,textoDigSegNum;
             ex2 = """
@@ -91,7 +91,7 @@ public class DesafioHoraDaPraticaFluxoApp {
             textoDigSegNum= """
                     Digite o segundo número:
                     """;
-
+    //--------------Final Variáveis texto ex2---------------------------
 
     //--------------Interação na tela ex2------------------------------
         System.out.println(ex2);
@@ -119,9 +119,80 @@ public class DesafioHoraDaPraticaFluxoApp {
                         System.out.println(textoNumPrimeiroMenor);
                         }
                     }
-                }
+
+   //--------------Fim da implementação ex2------------------------
+
+   //--------------Variáveis do ex3------------------------
+    double baseQuadrado,alturaQuadrado,areaQuadrado,raio,totalCircunferencia=0.0;
+    double pi= Math.PI;
+    //--------------Fim das Variáveis do ex3------------------------
+
+    //--------------Variáveis texto ex3-----------------------------
+    String ex3,textoBase,textoAltura,textoArea,textoRaio,textoCircunferencia,textocaso1,textocaso2,textoOpcaoDefault;
+    ex3="""
+    Crie um menu que oferece duas opções ao usuário: "
+    1. Calcular área do quadrado" e "
+    2. Calcular área do círculo".
+       Solicite a escolha do usuário e
+       realize o cálculo da área com base na opção selecionada.
+    """;
+    textoBase= """
+            Digite o tamanho da base do Quadrado
+            """;
+    textoAltura= """
+            Digite o tamanho da altura do Quadrado
+            """;
+    textoArea= """
+            O tamanho da área é:
+            """;
+    textoRaio= """
+            Digite o tamanho do raio
+            """;
+    textoCircunferencia= """
+            A circunferencia é:%.2f%
+            """;
+    textocaso1= """
+            Digite 1 para calcular área do quadrado
+            """;
+    textocaso2= """
+            Digite 2 para calcular área do círculo
+            """;
+    textoOpcaoDefault= """
+            Opção inválida. Favor, Digite somente 1 ou 2.
+            """;
+//--------------Final Variáveis texto ex3-----------------------------
+
+//--------------Resolução, raciocínio do ex3-----------------------------
+
+        Scanner digitando = new Scanner(System.in);
+
+        System.out.println(textocaso1);
+
+        System.out.println(textocaso2);
+
+        int escolha = digitando.nextInt();
+
+        switch (escolha){
+            case 1:
+                System.out.println(textoBase);
+                baseQuadrado = digitando.nextInt();
+                System.out.println(textoAltura);
+                alturaQuadrado = digitando.nextInt();
+
+                areaQuadrado=baseQuadrado*alturaQuadrado;
+                System.out.println(textoArea+areaQuadrado);
+                break;
+            case 2:
+                System.out.println(textoRaio);
+                raio=digitando.nextInt();
+                totalCircunferencia=pi*(raio*raio);
+                System.out.println(textoCircunferencia+totalCircunferencia);
+                break;
+            default:
+                System.out.println(textoOpcaoDefault);
         }
-         //--------------Fim da implementação ex2------------------------
+    //--------------Final da resolução, raciocínio do ex3-----------------------------
 
-
+    }
+}
 
