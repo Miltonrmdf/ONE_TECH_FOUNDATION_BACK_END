@@ -31,7 +31,5 @@ public class Jogo_Adinvinhacao {
         if (!acertou) {
             System.out.println("❌ Suas tentativas acabaram! O número era: " + numeroSecreto);
         }
-
-        scanner.close();
     }
 }
