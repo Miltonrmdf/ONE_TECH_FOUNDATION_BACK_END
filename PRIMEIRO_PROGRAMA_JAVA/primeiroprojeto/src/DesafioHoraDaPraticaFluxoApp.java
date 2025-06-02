@@ -209,6 +209,24 @@ public class DesafioHoraDaPraticaFluxoApp {
         }
  //--------------Final ex4-----------------------------
 
+ //-------------- ex5 -----------------------------
+
+   System.out.println("Crie um programa que solicite ao usuário a entrada de um número inteiro/n. " +
+  "Verifique se o número é par ou ímpar e exiba uma mensagem correspondente.");
+
+        Scanner parOuImpar = new Scanner(System.in);
+        System.out.println("Digite o número:");
+        int num = parOuImpar.nextInt();
+
+        if(num%2==0){
+            System.out.println("Numero Par ");
+        }else{
+            System.out.println("Numero Impar");
+        }
+  //-------------- Final ex5 -----------------------------
+
+  //-------------- ex6 -----------------------------
+
 
     }
 }
